@@ -44,7 +44,13 @@ jobs:
       needs: build
       steps:
       
-          - run: ls
+        - name: Download a Build Artifact
+          uses: actions/download-artifact@v4.1.8
+          with:
+            name: dist-files
+            path: ./dist
+    
+        - run: ls
 
 
 
