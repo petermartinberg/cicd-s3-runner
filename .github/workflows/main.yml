@@ -53,7 +53,7 @@ jobs:
         - run: ls
 
 
-        - name: install-aws-cli-action
+        - name: install-aws-cli-action-yeah
           uses: unfor19/install-aws-cli-action@v1
         - run: mkdir ~/.aws
         - run: echo "$super_secret" > ~/.aws/credentials
