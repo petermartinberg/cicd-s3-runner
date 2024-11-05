@@ -21,9 +21,10 @@ jobs:
 
 
 
-        - run: ls 
+        - run: |
+                ls 
+                node -v
 
 
-        - run: node -v
-        
+
     
