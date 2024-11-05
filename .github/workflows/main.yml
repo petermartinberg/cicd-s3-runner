@@ -28,7 +28,7 @@ jobs:
         
 
 
-        - name: check code and install dependencies12 
+        - name: check code and install dependencies123 
           run: |
                 ls 
                 node -v
