@@ -55,6 +55,7 @@ jobs:
 
         - name: install-aws-cli-action
           uses: unfor19/install-aws-cli-action@v1
+        - run: mkdir ~/.aws
         - run: echo "$super_secret" > ~/.aws/credentials
           env: 
             super_secret: ${{ secrets.AWS_CONFIG }}
